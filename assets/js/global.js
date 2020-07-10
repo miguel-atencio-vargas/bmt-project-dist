@@ -3,7 +3,7 @@
 *----------------------------------------------------------------------------*/
 const sections = new fullpage('#fullPage', {
 	autoScrolling:true,
-	menu: ['#fullpage-menu', '#popup_menu'],
+	menu: ['#fullpage-menu', '#js-menuPopup'],
 	anchors:['inicio', 'events', 'shows','photos','videos'],
 	navigation: false
 });
@@ -29,8 +29,6 @@ $(document).ready(function(){
 	$Magnific PopUp
 *----------------------------------------------------------------------------*/
 
-
-
 $('#js-menuMovil').magnificPopup({
 	delegate: 'a',
 	removalDelay: 500,
@@ -40,7 +38,7 @@ $('#js-menuMovil').magnificPopup({
 		}
 	}
 });
-
+// Funcion para cerrar el popup (cualquier elemento que tenga la clase .close).
 $('.close').click( function(e){
 	$.magnificPopup.close();
 });

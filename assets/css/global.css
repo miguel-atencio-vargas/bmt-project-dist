@@ -1,3 +1,8 @@
+.g-container,
+.g-container-header {
+  margin-left: auto;
+  margin-right: auto;
+}
 @media only screen and (min-width: 321px) {
   html {
     font-size: 6.5px;
@@ -23,6 +28,34 @@
     font-size: 10px;
   }
 }
+.g-container {
+  max-width: 280px;
+}
+@media only screen and (min-width: 321px) {
+  .g-container {
+    max-width: 380px;
+  }
+}
+@media only screen and (min-width: 481px) {
+  .g-container {
+    max-width: 600px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .g-container {
+    max-width: 810px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .g-container {
+    max-width: 1010px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .g-container {
+    max-width: 1034px;
+  }
+}
 .slider__item1 {
   background: url("../images/master1.jpg");
 }
@@ -44,7 +77,7 @@
   width: 100%;
   z-index: 100;
   background-color: rgba(0,0,0,0.92);
-  padding: 1rem 3rem;
+  padding: 1rem 2.7rem;
 }
 @media only screen and (min-width: 1200px) {
   .c-fixed {
@@ -97,7 +130,7 @@
     font-size: 1.8rem;
     display: inline-block;
     height: 100%;
-    padding: 0 1.5rem;
+    padding: 0 1.2rem;
     font-weight: 700;
     cursor: pointer;
   }
@@ -123,45 +156,45 @@
     padding-left: 0.8rem;
   }
 }
-.only-desktop {
-  position: relative;
-  background: #fff5e4;
+.c-menu-social {
   display: none;
-}
-.only-desktop label,
-.only-desktop a {
-  color: #303c42;
-}
-.only-desktop ul {
-  display: none;
-  position: absolute;
-  top: 125%;
-  left: -20%;
-  border-radius: 20px;
-}
-.only-desktop ul li {
-  background: #fff5e4;
-}
-.only-desktop ul li:nth-child(1):hover {
-  background: #3b5998;
-}
-.only-desktop ul li:nth-child(2):hover {
-  background: #833ab4;
-  background: linear-gradient(90deg, #833ab4 0%, #fc1d1d 50%, #fcb045 100%);
-}
-.only-desktop ul li:nth-child(3):hover {
-  background: radial-gradient(circle, #1e2337 32%, #5000ff 91%);
-}
-.only-desktop ul li:nth-child(4):hover {
-  background: #25d266;
-}
-.only-desktop ul li :hover {
-  color: #fff5e4;
-  transition: 0.7s ease;
 }
 @media only screen and (min-width: 992px) {
-  .only-desktop {
+  .c-menu-social {
     display: block;
+    position: relative;
+    background: #fff5e4;
+  }
+  .c-menu-social label,
+  .c-menu-social a {
+    color: #303c42;
+  }
+  .c-menu-social ul {
+    display: none;
+    position: absolute;
+    top: 125%;
+    left: -20%;
+    border-radius: 20px;
+  }
+  .c-menu-social ul li {
+    background: #fff5e4;
+  }
+  .c-menu-social ul li :hover {
+    color: #fff5e4;
+    transition: 0.5s ease;
+  }
+  .c-menu-social ul li:nth-child(1):hover {
+    background: #3b5998;
+  }
+  .c-menu-social ul li:nth-child(2):hover {
+    background: #833ab4;
+    background: linear-gradient(90deg, #833ab4 0%, #fc1d1d 50%, #fcb045 100%);
+  }
+  .c-menu-social ul li:nth-child(3):hover {
+    background: radial-gradient(circle, #1e2337 32%, #5000ff 91%);
+  }
+  .c-menu-social ul li:nth-child(4):hover {
+    background: #25d266;
   }
 }
 input[type="checkbox"] {
@@ -217,7 +250,7 @@ input[type="checkbox"]:checked + ul {
 .c-popup__menu {
   overflow: hidden;
   background: #303c42;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
 }
 .c-popup__menu li {
   border-bottom: 1px solid rgba(255,245,228,0.2);
@@ -242,9 +275,21 @@ input[type="checkbox"]:checked + ul {
   font-size: 2.3rem;
   padding-left: 0.8rem;
 }
-.c-svg {
-  position: absolute;
-  bottom: 0.1rem;
+.c-popup__social {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  background: #fff8ec;
+  border-radius: 0 0 8px 8px;
+}
+.c-popup__social span {
+  display: none;
+}
+.c-popup__social i {
+  display: block;
+  font-size: 4.5rem;
+  padding: 1rem;
+  color: #303c42;
 }
 .c-home__content {
   width: 100%;
@@ -256,35 +301,100 @@ input[type="checkbox"]:checked + ul {
   position: absolute;
   z-index: 10;
   text-align: center;
+  left: 50.5%;
+  transform: translate(-50%);
 }
 .c-home__content .h1 {
   font-family: 'RussoOne';
   font-size: 5.5rem;
   letter-spacing: 0.6rem;
   text-shadow: 7px 4px 3px #07102a;
+  padding: 1rem;
 }
 .c-home__content .h2 {
   font-size: 2.5rem;
   font-weight: 500;
-  text-shadow: 7px 4px 3px #07102a;
+  text-shadow: 3px 2px 3px #07102a;
+  padding: 1rem;
 }
 .c-home__content .film {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .c-home__content .film {
+    display: inline-block;
+    font-weight: 500;
+    padding-top: 1.4rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.35rem;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+}
+.c-home__content .play {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .c-home__content .play {
+    display: inline;
+    font-size: 2rem;
+    position: relative;
+    top: 0.2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .c-home__buttons {
+    display: none;
+  }
+}
+.c-home__button,
+.c-home__button-2 {
   display: inline-block;
-  font-weight: 500;
-  padding-top: 1.4rem;
-  font-size: 2rem;
-  letter-spacing: 0.35rem;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  margin: 4rem 1.5rem 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  font-size: 2.6rem;
 }
-.c-home__content i {
-  font-size: 2rem;
-  position: relative;
-  top: 0.2rem;
+.c-home__button i,
+.c-home__button-2 i {
+  padding-left: 1rem;
+  vertical-align: middle;
 }
-.g-container {
-  max-width: 1134px;
-  margin-left: auto;
-  margin-right: auto;
+.c-home__button {
+  background: #fff5e4;
+  box-shadow: 0px 0px 5px #fff;
+  color: #303c42;
+  border-radius: 4px;
+  font-weight: 700;
+}
+.c-home__button:hover {
+  color: #303c42;
+}
+.c-home__button-2 {
+  border: 2.3px solid #fff5e4;
+  float: left;
+}
+@media only screen and (max-width: 320px) {
+  .c-home__button-2 {
+    margin-left: 13rem;
+  }
+}
+.c-svg {
+  position: absolute;
+  bottom: 0;
+  left: -3rem;
+  max-width: none;
+  width: 140%;
+}
+@media only screen and (min-width: 481px) {
+  .c-svg {
+    max-width: 103%;
+    bottom: 0;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .c-svg {
+    bottom: -4rem;
+  }
 }
 /*# sourceMappingURL=global.css.map */

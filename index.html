@@ -30,7 +30,7 @@
   </head>
   <body class="c-block-body">
     <div class="c-fixed">
-      <div class="g-container">
+      <div class="g-container-header">
         <header class="c-header">
           <div class="c-header__logo"><a href="#inicio"><img src="assets/images/logo.svg"> <span>BMT</span></a></div>
           <ul class="c-header__menu" id="fullpage-menu">
@@ -40,36 +40,42 @@
             <li data-menuanchor="photos"> <a class="close" href="#photos">Galería<i class="icon-image4"></i></a></li>
             <li data-menuanchor="videos"><a class="close" href="#videos">Videos <i class="icon-play"></i></a></li>
             <li><a href="#.">Plus Ultra <img src="assets/images/plus.png" alt="blog plus ultra"></a></li>
-            <li class="only-desktop">
+            <li class="c-menu-social">
               <label for="pop">Síguenos</label>
               <input type="checkbox" id="pop">
               <ul>
-                <li><a href="#."><i class="icon-facebook2"></i> Facebook</a></li>
-                <li><a href="#."><i class="icon-instagram"></i> Instagram</a></li>
-                <li><a href="#."><i class="icon-cloud2"></i> Mixcloud</a></li>
-                <li><a href="#."><i class="icon-whatsapp"></i> Whatsapp</a></li>
+                <li><a href="https://www.facebook.com/BeMyTotem/" target="_blank"> <span>Facebook</span><i class="icon-facebook2"> </i></a></li>
+                <li><a href="https://www.instagram.com/bmt_brotherhood" target="_blank"> <span>Instagram</span><i class="icon-instagram"> </i></a></li>
+                <li><a href="https://www.mixcloud.com/bemytotem" target="_blank"> <span>Mixcloud</span><i class="icon-cloud2"> </i></a></li>
+                <li><a href="#." target="_blank"> <span>Whatsapp</span><i class="icon-whatsapp"> </i></a></li>
               </ul>
             </li>
           </ul>
           <div class="c-header__burguer" id="js-menuMovil"><a href="#popup" data-effect="mfp-zoom-in"><i class="icon-menu3"></i></a>
             <div class="c-popup mfp-with-anim mfp-hide" id="popup">
-              <ul class="c-popup__menu" id="popup_menu">
+              <ul class="c-popup__menu" id="js-menuPopup">
                 <li class="active" data-menuanchor="inicio"> <a class="close" href="#inicio">Inicio<i class="icon-home2"></i></a></li>
                 <li data-menuanchor="events"> <a class="close" href="#events">Próximos Eventos<i class="icon-calendar2"></i></a></li>
                 <li data-menuanchor="shows"><a class="close" href="#shows">Set's<i class="icon-album"></i></a></li>
                 <li data-menuanchor="photos"> <a class="close" href="#photos">Galería<i class="icon-image4"></i></a></li>
                 <li data-menuanchor="videos"><a class="close" href="#videos">Videos <i class="icon-play"></i></a></li>
                 <li><a href="#.">Plus Ultra <img src="assets/images/plus.png" alt="blog plus ultra"></a></li>
-                <li class="only-desktop">
+                <li class="c-menu-social">
                   <label for="pop">Síguenos</label>
                   <input type="checkbox" id="pop">
                   <ul>
-                    <li><a href="#."><i class="icon-facebook2"></i> Facebook</a></li>
-                    <li><a href="#."><i class="icon-instagram"></i> Instagram</a></li>
-                    <li><a href="#."><i class="icon-cloud2"></i> Mixcloud</a></li>
-                    <li><a href="#."><i class="icon-whatsapp"></i> Whatsapp</a></li>
+                    <li><a href="https://www.facebook.com/BeMyTotem/" target="_blank"> <span>Facebook</span><i class="icon-facebook2"> </i></a></li>
+                    <li><a href="https://www.instagram.com/bmt_brotherhood" target="_blank"> <span>Instagram</span><i class="icon-instagram"> </i></a></li>
+                    <li><a href="https://www.mixcloud.com/bemytotem" target="_blank"> <span>Mixcloud</span><i class="icon-cloud2"> </i></a></li>
+                    <li><a href="#." target="_blank"> <span>Whatsapp</span><i class="icon-whatsapp"> </i></a></li>
                   </ul>
                 </li>
+              </ul>
+              <ul class="c-popup__social">
+                <li><a href="https://www.facebook.com/BeMyTotem/" target="_blank"> <span>Facebook</span><i class="icon-facebook2"> </i></a></li>
+                <li><a href="https://www.instagram.com/bmt_brotherhood" target="_blank"> <span>Instagram</span><i class="icon-instagram"> </i></a></li>
+                <li><a href="https://www.mixcloud.com/bemytotem" target="_blank"> <span>Mixcloud</span><i class="icon-cloud2"> </i></a></li>
+                <li><a href="#." target="_blank"> <span>Whatsapp</span><i class="icon-whatsapp"> </i></a></li>
               </ul>
             </div>
           </div>
@@ -78,10 +84,11 @@
     </div>
     <div class="full-container" id="fullPage">
       <div class="section c-home">
-        <div class="c-home__content">
+        <div class="c-home__content g-container">
           <div class="h1">#Join the Ritual</div>
           <div class="h2">Colectivo de Dj’s, amigos, amantes de la música underground y alternativa! <br>Ciclos de música mensuales: <br>Slang Sessions | Jam Sessions</div><a href="#">
-            <div class="film">Watch the film</div> <i class="icon-play3"></i></a>
+            <div class="film">Watch the film</div> <i class="icon-play3 play"></i></a>
+          <div class="c-home__buttons"><a class="c-home__button" href="#">Video Mensual<i class="icon-play3"></i></a><a class="c-home__button-2" href="#events">Eventos<i class="icon-calendar2"></i></a></div>
         </div>
         <div class="c-home__slider">
           <div class="slider__item1"></div>
