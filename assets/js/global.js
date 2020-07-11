@@ -39,6 +39,7 @@ $('#js-menuMovil').magnificPopup({
 		}
 	}
 });
+
 $('#js-video-popup').magnificPopup({
 	delegate: '.play',
 	removalDelay: 500,
