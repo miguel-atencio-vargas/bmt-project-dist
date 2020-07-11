@@ -351,7 +351,7 @@ input[type="checkbox"]:checked + ul {
 .c-home__button-2 {
   display: inline-block;
   margin: 4rem 1.5rem 1rem;
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem;
   border-radius: 5px;
   font-size: 2.6rem;
 }
@@ -393,7 +393,7 @@ input[type="checkbox"]:checked + ul {
 }
 .c-home__video .main-video {
   margin-top: 15rem;
-  width: 90vw;
+  width: 85vw;
 }
 @media only screen and (min-width: 769px) {
   .c-home__video .main-video {

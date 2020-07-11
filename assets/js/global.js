@@ -1,3 +1,4 @@
+//document.addEventListener("turbolinks:load", function() {}); En caso de haber problema con turbolinks
 /*----------------------------------------------------------------------------*
 	$PAGE--FULL
 *----------------------------------------------------------------------------*/
@@ -49,7 +50,7 @@ $('#js-video-popup').magnificPopup({
 		}
 	}
 });
-
+// Funciones para reproducir y stopear el video del home
 $('.play').click( function(e){
 	$('.main-video')[0].play();
 });
@@ -58,20 +59,20 @@ $('.c-home__video').click( function(e){
 	$.magnificPopup.close();
 });
 
-
-
 // Funcion para cerrar el popup (cualquier elemento que tenga la clase .close).
 $('.close').click( function(e){
 	$.magnificPopup.close();
 });
+/*----------------------------------------------------------------------------*
+	$FIN Magnific PopUp
+*----------------------------------------------------------------------------*/
 
 
 
 
 
 
-
-
+// reserva nigma uso del popup
 // $(document).on("click", "#js-video-popup", function(t){
 // 	t.preventDefault(),
 // 	$.magnificPopup.open({
