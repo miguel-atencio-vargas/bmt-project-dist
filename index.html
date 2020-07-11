@@ -41,8 +41,8 @@
             <li data-menuanchor="videos"><a class="close" href="#videos">Videos <i class="icon-play"></i></a></li>
             <li><a href="#.">Plus Ultra <img src="assets/images/plus.png" alt="blog plus ultra"></a></li>
             <li class="c-menu-social">
-              <label for="pop">Síguenos</label>
-              <input type="checkbox" id="pop">
+              <label for="menu-social">Síguenos</label>
+              <input id="menu-social" type="checkbox">
               <ul>
                 <li><a href="https://www.facebook.com/BeMyTotem/" target="_blank"> <span>Facebook</span><i class="icon-facebook2"> </i></a></li>
                 <li><a href="https://www.instagram.com/bmt_brotherhood" target="_blank"> <span>Instagram</span><i class="icon-instagram"> </i></a></li>
@@ -61,8 +61,8 @@
                 <li data-menuanchor="videos"><a class="close" href="#videos">Videos <i class="icon-play"></i></a></li>
                 <li><a href="#.">Plus Ultra <img src="assets/images/plus.png" alt="blog plus ultra"></a></li>
                 <li class="c-menu-social">
-                  <label for="pop">Síguenos</label>
-                  <input type="checkbox" id="pop">
+                  <label for="menu-social">Síguenos</label>
+                  <input id="menu-social" type="checkbox">
                   <ul>
                     <li><a href="https://www.facebook.com/BeMyTotem/" target="_blank"> <span>Facebook</span><i class="icon-facebook2"> </i></a></li>
                     <li><a href="https://www.instagram.com/bmt_brotherhood" target="_blank"> <span>Instagram</span><i class="icon-instagram"> </i></a></li>
@@ -84,11 +84,16 @@
     </div>
     <div class="full-container" id="fullPage">
       <div class="section c-home">
-        <div class="c-home__content g-container">
+        <div class="c-home__content g-container" id="js-video-popup">
           <div class="h1">#Join the Ritual</div>
-          <div class="h2">Colectivo de Dj’s, amigos, amantes de la música underground y alternativa! <br>Ciclos de música mensuales: <br>Slang Sessions | Jam Sessions</div><a href="#">
-            <div class="film">Watch the film</div> <i class="icon-play3 play"></i></a>
-          <div class="c-home__buttons"><a class="c-home__button" href="#">Video Mensual<i class="icon-play3"></i></a><a class="c-home__button-2" href="#events">Eventos<i class="icon-calendar2"></i></a></div>
+          <div class="h2">Colectivo de Dj’s, amigos, amantes de la música underground y alternativa! <br>Ciclos de música mensuales: <br>Slang Sessions / Jam Sessions</div><a class="play" href="#video-mensual" data-effect="mfp-zoom-in">
+            <div class="film">Watch the film</div> <i class="icon-play3 play-icon"></i></a>
+          <div class="c-home__buttons gallery-item"><a class="play c-home__button" href="#video-mensual" data-effect="mfp-zoom-in">Video Mensual<i class="icon-play3"></i></a><a class="c-home__button-2" href="#events">Eventos<i class="icon-calendar2"></i></a></div>
+          <div class="mfp-with-anim mfp-hide c-home__video" id="video-mensual">
+            <video class="main-video" controls>
+              <source src="assets/images/home.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
         <div class="c-home__slider">
           <div class="slider__item1"></div>

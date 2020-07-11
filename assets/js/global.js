@@ -38,6 +38,28 @@ $('#js-menuMovil').magnificPopup({
 		}
 	}
 });
+$('#js-video-popup').magnificPopup({
+	delegate: '.play',
+	removalDelay: 500,
+	preloader: true,
+	closeBtnInside: false,
+	callbacks: {
+		beforeOpen: function() {
+			this.st.mainClass = this.st.el.attr('data-effect');
+		}
+	}
+});
+
+$('.play').click( function(e){
+	$('.main-video')[0].play();
+});
+$('.c-home__video').click( function(e){
+	$('.main-video')[0].pause();
+	$.magnificPopup.close();
+});
+
+
+
 // Funcion para cerrar el popup (cualquier elemento que tenga la clase .close).
 $('.close').click( function(e){
 	$.magnificPopup.close();
@@ -45,7 +67,12 @@ $('.close').click( function(e){
 
 
 
-// $(document).on("click", "js-menuMovil", function(t){
+
+
+
+
+
+// $(document).on("click", "#js-video-popup", function(t){
 // 	t.preventDefault(),
 // 	$.magnificPopup.open({
 // 		items: { src: '<div><h1>Hola mundo!</h1></div>', type: "inline"},
